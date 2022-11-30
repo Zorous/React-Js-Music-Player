@@ -1,0 +1,34 @@
+{
+  "Songs": [
+    {
+      "id": 6,
+      "title": "Indila - Dernière Danse (Clip Officiel)(MP3_320K)",
+      "image": "http://localhost:3000/images/FR_imgs/1.jpg",
+      "src": "http://localhost:3000/Songs/French/Indila - Dernière Danse (Clip Officiel)(MP3_320K)"
+    },
+    {
+      "id": 7,
+      "title": "Stromae - Formidable (ceci n_est pas une leçon)(MP3_320K)",
+      "image": "http://localhost:3000/images/FR_imgs/2.jpg",
+      "src": "http://localhost:3000/Songs/French/Stromae - Formidable (ceci n_est pas une leçon)(MP3_320K)"
+    },
+    {
+      "id": 8,
+      "title": "Stromae - Santé (Official Music Video)(MP3_320K)",
+      "image": "http://localhost:3000/images/FR_imgs/3.jpg",
+      "src": "http://localhost:3000/Songs/French/Stromae - Santé (Official Music Video)(MP3_320K)"
+    },
+    {
+      "id": 9,
+      "title": "Indila - Love story _ (Sped up)(MP3_320K)",
+      "image": "http://localhost:3000/images/FR_imgs/4.jpg",
+      "src": "http://localhost:3000/Songs/French/Indila - Love story _ (Sped up)(MP3_320K)"
+    },
+    {
+      "id": 10,
+      "title": "Stromae - Alors On Danse(MP3_320K)",
+      "image": "http://localhost:3000/images/FR_imgs/5.jpg",
+      "src": "http://localhost:3000/Songs/French/Stromae - Alors On Danse(MP3_320K)"
+    }
+  ]
+}

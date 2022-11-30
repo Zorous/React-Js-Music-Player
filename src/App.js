@@ -1,24 +1,65 @@
-import logo from './logo.svg';
 import './App.css';
+import UserInterface from './Components/Layout/UserInterface';
+import { Link,Routes,Route,BrowserRouter } from "react-router-dom";
+import React,{useState,useEffect} from 'react';
+import LandingPage from './Components/Layout/LandingPage';
+import Search from './Components/Layout/Search';
 
+
+
+import SearchSp from './Components/_Spotify/Search';
+
+import Home from './Components/_Spotify/index'
+import Albums from './Components/Layout/Albums';
+import Main from './Components/Layout/Main'
+import AudioPlayer from './Components/Layout/AudioPlayer';
+import Login from './Components/auth/Login';
+import { setClientToken } from './spotify';
 function App() {
+  const [token,setToken] = useState("")
+
+useEffect(() =>{
+  const hash = window.location.hash
+  // console.log(hash.split("&")[0].split("=")[1])
+
+  let token = window.localStorage.getItem("token")
+  window.location.hash=""
+  if(!token && hash){
+    const _token = hash.split("&")[0].split("=")[1];
+    window.localStorage.setItem("token",_token)
+    setToken(_token);
+    setClientToken(_token);
+  }
+  
+  else{
+    setToken(token)
+    setClientToken(token)
+  }
+},[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    !token ?
+      (<BrowserRouter>
+        <Routes>
+            <Route index element={<LandingPage />} />         
+            <Route path='main' element={<Main />} />         
+          </Routes>
+      </BrowserRouter>   
+    ):
+    (<BrowserRouter>
+      <Routes>
+          <Route path="/welcome" element={<LandingPage />} />
+          <Route index element={<Home />} />
+          <Route path="/search" element={<SearchSp token={token}/>} />
+          <Route path="albums" element={<Albums />} />
+          <Route path="AudioPlayer/:id" element={<AudioPlayer />} />
+          <Route path="Login_with_spotify" element={<Login />} />
+          <Route path="audio/:num" element={<AudioPlayer />} />
+
+          
+          
+        </Routes>
+    </BrowserRouter>
+    )
   );
 }
 

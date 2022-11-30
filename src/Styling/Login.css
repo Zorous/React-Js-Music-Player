@@ -1,0 +1,26 @@
+.login-btn{
+    color: #fff;
+    padding: 20px;
+    background-color: springgreen;
+    width: 400px;
+    font-size: 42px;
+    font-weight: bolder;
+    border-radius: 12px ;
+}
+.login-btn:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+width: auto;
+}
+
+#container-login{
+    width: 100vw;
+    margin: auto;
+}
+
+body{
+    display: block !important;
+}

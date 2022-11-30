@@ -1,0 +1,91 @@
+{
+    "Langues": {
+      "ENG": [
+        {
+          "id": 1,
+          "title": "Living Life In The Night - Cheriimoya_ Sierra Kidd (Lyrics)(MP3_320K).mp3",
+          "image": "http://localhost:3000/images/ENG_imgs/2.jpg",
+          "src": "http://localhost:3000/Songs/English/Living Life In The Night - Cheriimoya_ Sierra Kidd (Lyrics)(MP3_320K).mp3"
+        },
+        {
+          "id": 2,
+          "title": "ZAYN - Dusk Till Dawn ft. Sia (Kuoga Remix)(MP3_320K).mp3",
+          "image": "http://localhost:3000/images/ENG_imgs/3.jpg",
+          "src": "http://localhost:3000/Songs/English/ZAYN - Dusk Till Dawn ft. Sia (Kuoga Remix)(MP3_320K).mp3"
+        },
+        {
+          "id": 3,
+          "title": "NF - The Search (lyrics)(MP3_320K)",
+          "image": "http://localhost:3000/images/ENG_imgs/4.jpg",
+          "src": "http://localhost:3000/Songs/English/NF - The Search (lyrics)(MP3_320K)"
+        },
+        {
+          "id": 4,
+          "title": "The Living Tombstone - Discord (Lyrics) I can_t sit idly_ no_ I can_t move at all [TikTok](MP3_320K)",
+          "image": "http://localhost:3000/images/ENG_imgs/5.jpg",
+          "src": "http://localhost:3000/Songs/English/The Living Tombstone - Discord (Lyrics) I can_t sit idly_ no_ I can_t move at all [TikTok](MP3_320K)"
+        },
+        {
+          "id": 5,
+          "title": "The Living Tombstone - Discord (Lyrics) I can_t sit idly_ no_ I can_t move at all [TikTok](MP3_320K)",
+          "image": "http://localhost:3000/images/ENG_imgs/6.jpg",
+          "src": "http://localhost:3000/Songs/English/Suzanne Vega_ DNA - Tom_s Diner (Traducida al Español)(MP3_320K)"
+        }
+      ],
+      "FR": [
+        {
+          "id": 6,
+          "title": "Indila - Dernière Danse (Clip Officiel)(MP3_320K)",
+          "image": "http://localhost:3000/images/FR_imgs/1.jpg",
+          "src": "http://localhost:3000/Songs/French/Indila - Dernière Danse (Clip Officiel)(MP3_320K)"
+        },
+        {
+          "id": 7,
+          "title": "Stromae - Formidable (ceci n_est pas une leçon)(MP3_320K)",
+          "image": "http://localhost:3000/images/FR_imgs/2.jpg",
+          "src": "http://localhost:3000/Songs/French/Stromae - Formidable (ceci n_est pas une leçon)(MP3_320K)"
+        },
+        {
+          "id": 8,
+          "title": "Stromae - Santé (Official Music Video)(MP3_320K)",
+          "image": "http://localhost:3000/images/FR_imgs/3.jpg",
+          "src": "http://localhost:3000/Songs/French/Stromae - Santé (Official Music Video)(MP3_320K)"
+        },
+        {
+          "id": 9,
+          "title": "Indila - Love story _ (Sped up)(MP3_320K)",
+          "image": "http://localhost:3000/images/FR_imgs/4.jpg",
+          "src": "http://localhost:3000/Songs/French/Indila - Love story _ (Sped up)(MP3_320K)"
+        },
+        {
+          "id": 10,
+          "title": "Stromae - Alors On Danse(MP3_320K)",
+          "image": "http://localhost:3000/images/FR_imgs/5.jpg",
+          "src": "http://localhost:3000/Songs/French/Stromae - Alors On Danse(MP3_320K)"
+        }
+      ],
+      "RUS": [
+        {
+          "id": 1,
+          "title": "E QUE HOJE VAI TER FESTINHA AQUI DENTRO DO MEU BARRACO SEQUÊNCIA DE VAPO Com Grave(MP3_320K).mp3",
+          "image": "http://localhost:3000/images/ENG_imgs/1.jpg",
+          "src": "http://localhost:3000/Songs/E QUE HOJE VAI TER FESTINHA AQUI DENTRO DO MEU BARRACO SEQUÊNCIA DE VAPO Com Grave(MP3_320K).mp3"
+        }
+      ],
+      "DTS": [
+        {
+          "id": 12,
+          "title": "Kontra K - Erfolg ist kein Glück (Official Video)(MP3_320K)",
+          "image": "http://localhost:3000/images/DTS_imgs/1.jpg",
+          "src": "http://localhost:3000/Songs/German/Kontra K - Erfolg ist kein Glück (Official Video)(MP3_320K)"
+        },
+        {
+          "id": 13,
+          "title": "Bist du real(MP3_160K)",
+          "image": "http://localhost:3000/images/DTS_imgs/2.jpg",
+          "src": "http://localhost:3000/Songs/German/Bist du real(MP3_160K)"
+        }
+      ]
+    }
+  }
+

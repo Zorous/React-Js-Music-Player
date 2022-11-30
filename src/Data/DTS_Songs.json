@@ -1,0 +1,16 @@
+{
+    "Songs": [
+        {
+          "id": 12,
+          "title": "Kontra K - Erfolg ist kein Glück (Official Video)(MP3_320K)",
+          "image": "http://localhost:3000/images/DTS_imgs/1.jpg",
+          "src": "http://localhost:3000/Songs/German/Kontra K - Erfolg ist kein Glück (Official Video)(MP3_320K)"
+        },
+        {
+          "id": 13,
+          "title": "Bist du real(MP3_160K)",
+          "image": "http://localhost:3000/images/DTS_imgs/2.jpg",
+          "src": "http://localhost:3000/Songs/German/Bist du real(MP3_160K)"
+        }
+      ]
+}

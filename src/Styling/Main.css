@@ -1,0 +1,103 @@
+
+body{
+    color: #fff;
+    overflow-y: scroll !important;
+
+}
+
+.fa-solid{
+  font-size:24px;
+}
+
+.light-mode{
+  background:  #FFFDFA !important;
+  color:#292929;
+}
+
+.title-switch{
+  color:#292929 !important;
+}
+
+#lang{
+  background-color: #000;
+  color: #fff;
+}
+.switch-lang{
+  background-color: #FFFDFA !important;
+  color:#292929 !important;
+}
+.card,.card-text{
+  background-color: #292929;
+  color: #FFFDFA !important;
+}
+.card-switch,.card-text-switch{
+  background-color: #FFFDFA;
+  color: #292929 !important;
+}
+#switch{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+
+
+.lang{
+  left:100px;
+}
+.card-text{
+    color:#000;
+}
+
+#title{
+    /* position: fixed; */
+}
+
+.bg-overlay{
+    background-repeat: no-repeat;
+    background-size: fit-content;
+    padding: 0px;
+    margin:0px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom: 0px;
+    filter:blur(2px);
+    z-index: 0;
+    
+  }
+  .lang{
+    position: absolute;
+    right:20px;
+    top:20px;
+  }
+
+#content{
+    position:relative;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 10vh !important;
+    margin: auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
