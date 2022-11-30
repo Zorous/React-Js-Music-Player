@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import apiClient from '../../../spotify';
 
 function Sidebar() {
-const [userimage,setUserimage] = useState("https://i.pinimg.com/564x/54/ef/be/54efbe41a8e81cebf4ff119aca2b7259.jpg");
+const [userimage,setUserimage] = useState();
 const [Username,setUsername] =  useState("User")
   useEffect(() => {
     apiClient.get("me").then(response =>{
@@ -23,12 +23,11 @@ const [Username,setUsername] =  useState("User")
   return (
     <div className="sidebar-container">
       <img src={userimage}
-        className='profile-img' alt='profile' /> <br></br>
-        <h6> {Username}</h6>
+        className='profile-img' alt='profile' /> 
       <div>
        <SidebarButton to="/" icon={<i class="fa-solid fa-house"></i>}  title="Home" />
        <SidebarButton to="/player" icon={<i class="fa-solid fa-play"></i>}  title="Player" />
-       <SidebarButton to="/albums" icon={<i class="fa-solid fa-compact-disc"></i>}  title="Albums" />
+       <SidebarButton to="/playlists" icon={<i class="fa-solid fa-compact-disc"></i>}  title="Playlists" />
        <SidebarButton to="/search" icon={<i class="fa-solid fa-magnifying-glass"></i>}  title="Search" />
       </div>
       <div onClick={logout} className="btn-container" id="logout">

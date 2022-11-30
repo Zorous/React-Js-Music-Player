@@ -15,6 +15,8 @@ import Main from './Components/Layout/Main'
 import AudioPlayer from './Components/Layout/AudioPlayer';
 import Login from './Components/auth/Login';
 import { setClientToken } from './spotify';
+import Playlists from './Components/_Spotify/Playlists/Playlists';
+import Player from './Components/_Spotify/Audio Player/Player';
 function App() {
   const [token,setToken] = useState("")
 
@@ -50,8 +52,8 @@ useEffect(() =>{
           <Route path="/welcome" element={<LandingPage />} />
           <Route index element={<Home />} />
           <Route path="/search" element={<SearchSp token={token}/>} />
-          <Route path="albums" element={<Albums />} />
-          <Route path="AudioPlayer/:id" element={<AudioPlayer />} />
+          <Route path="/playlists" element={<Playlists />} />
+          <Route path="/player" element={<Player />} />
           <Route path="Login_with_spotify" element={<Login />} />
           <Route path="audio/:num" element={<AudioPlayer />} />
 

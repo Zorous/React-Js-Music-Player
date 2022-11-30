@@ -81,7 +81,7 @@ function LandingPage() {
         <div className='row' id="myrow">
           <div className='col col-md-6 col-lg-6' id="mycol">
             <h1 id="title">
-              Welcomee to my Music Player <span style={{ color: "#12c2e9" }}>React JS</span> project
+              Welcome to my Music Player <span style={{ color: "#12c2e9" }}>React JS</span> project
 
             </h1>
 
