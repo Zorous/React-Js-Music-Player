@@ -2,6 +2,7 @@ import React from 'react'
 import { Route,redirect } from 'react-router-dom';
 import { Link, Outlet } from "react-router-dom";
 import '../../Styling/LandingPage.scss';
+import '../../Styling/LandingPage.css';
 import { loginEndpoint, setClientToken } from '../../spotify';
 import { useEffect, useState } from 'react';
 
@@ -98,7 +99,7 @@ function LandingPage() {
               }}></div>
             </div>
             <div className="col col-lg-12 col-md-12">
-              <button id='spotify-btn' style={{ backgroundColor: '#000', padding: "10px", fontSize: "24px", borderRadius: "12px" }}>
+              <button id='spotify-btn'>
                 <a id="spotify-link" style={{ textDecoration: "none", color: "#fff", fontWeight: "bolder" }} href={loginEndpoint}>Login with spotify</a></button>
             </div>
 

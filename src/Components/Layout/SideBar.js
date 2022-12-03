@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../../Styling/SideBarStyle.css';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
@@ -7,22 +7,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function SideBar() {
-const [token,setToken] = useState("")
+    const [token, setToken] = useState("")
 
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const [image,setImage]=useState("https://i.pinimg.com/564x/02/70/e8/0270e8f9ebb8e674a65e6657f5d5849a.jpg");
-    const [userName,setUsername] = useState("Music Player")
+    const [image, setImage] = useState("https://i.pinimg.com/564x/02/70/e8/0270e8f9ebb8e674a65e6657f5d5849a.jpg");
+    const [userName, setUsername] = useState("Music Player")
 
     return (
         <>
-            <div style={{position:"fixed",top:"0px"}}>
-                    <span onClick={handleShow} className="side-nav">
-                        <i className="fa fa-user" style={{ color: "#fff", fontSize: "36px" }} aria-hidden="true"></i>
-                    </span>
+            <div style={{ position: "fixed", top: "0px" }}>
+                <span onClick={handleShow} className="side-nav">
+                    <i className="fa fa-user" style={{ color: "#fff", fontSize: "36px" }} aria-hidden="true"></i>
+                </span>
                 <div>
                     <Offcanvas style={{ backgroundColor: "#000" }} show={show} onHide={handleClose}>
                         <Offcanvas.Header className='sidebarHeader' closeButton>
@@ -61,12 +61,13 @@ const [token,setToken] = useState("")
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/Search" className='link'>Search</Link>
-                                </li>                                    <li className="nav-item">
+                                </li>
+                                <li className="nav-item">
 
-                                {
-                                    !token?"":
-                                    "Logout"
-                                }  
+                                    {
+                                        !token ? "" :
+                                            "Logout"
+                                    }
                                 </li>
 
                             </ul>

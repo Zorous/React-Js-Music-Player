@@ -42,7 +42,7 @@ useEffect(() =>{
     !token ?
       (<BrowserRouter>
         <Routes>
-            <Route index element={<LandingPage />} />         
+            <Route index  element={<LandingPage />} />         
             <Route path='main' element={<Main />} />         
           </Routes>
       </BrowserRouter>   

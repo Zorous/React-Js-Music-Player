@@ -29,6 +29,21 @@ html,body {
 }
 
 
+#spotify-btn:hover{
+    background-color:  #1ed760;
+
+}
+
+#spotify-btn{
+    background-color: #000;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 30px;
+    transition : all 0.5s;
+    outline: none;
+
+}
+
 
 
 

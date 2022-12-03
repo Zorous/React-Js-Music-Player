@@ -1,6 +1,13 @@
 .SongCard-body {
-  width: 100%;
-  height: 55%;
-  background-color: #000;
+  width: 95%;
+  height: fit-content;
+  background-color: #292929;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom:6vh;
+
 }

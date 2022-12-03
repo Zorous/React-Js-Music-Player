@@ -57,8 +57,29 @@
   }
   #logout:hover {
     cursor: pointer;
+    text-decoration: none;
+    transform: scale(1.05);
   }
 
   #logout{
     color: #fff !important;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .title {
+      display: none;
+    }
+    .sidebar-container{
+      width: 60px;
+
+    }
+    .text{
+      display: none;
+    }
+    .content-wrapper{
+      margin-left: 50px !important;
+      padding: 5vw !important;
+
+    }
   }

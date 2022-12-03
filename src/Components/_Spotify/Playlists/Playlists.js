@@ -29,7 +29,7 @@ navigate('/player',{state:{id:id}})
           <div className='row'>
             {playlists?.map((playlist) => {
               return (
-                <div className='col col-md-4 col-lg-4 m-5'>
+                <div className='col col-sm-12 col-md-4 col-lg-3 m-5'>
                   <div className="card playlist" key={playlist.id} style={{ width: "18rem" }} onClick={()=>{playPlaylist(playlist.id)}}>
                     <img className="card-img-top playlist" src={playlist.images[0].url} alt="playlist" />
                     <div className="card-body">

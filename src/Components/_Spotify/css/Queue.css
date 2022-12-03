@@ -1,0 +1,16 @@
+.Queue-container{
+    width: 100%;
+    height: 35%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    background-color: #1ed760;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.queue{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+}
