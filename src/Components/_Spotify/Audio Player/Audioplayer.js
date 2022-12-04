@@ -15,7 +15,7 @@ function Audioplayer({ currentTrack }) {
     color={"#1ed760"}/>
     </div>
     <div className='player-right-body'>
-hh
+<p></p>
     </div>
     </div>
   )

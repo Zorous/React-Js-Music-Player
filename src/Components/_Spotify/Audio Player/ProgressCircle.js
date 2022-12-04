@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../css/ProgressCircle.css'
 
 const Disc = ({color,percentage,size,strokeWidth})=>{
     const radius = size/2 - 10;
     const dis = ((2*Math.PI * radius) - 20)
-    const strokeperc = (100 - Math.round(percentage) * dis) /100;
+    const strokeperc = ((100 - Math.round(percentage)) * dis) /100;
 
     return(
         <circle
@@ -35,6 +35,35 @@ function ProgressCircle({
         size={size}
         />
         </g>
+        <defs>
+        <clipPath id='myCircle'>
+        <circle cx='50%' cy='50%' r={size / 2 - 30} fill="#fff" />
+        </clipPath>
+
+        <clipPath id='myInnerCircle'>
+        <circle cx='50%' cy='50%' r={size / 2 - 100} fill="#fff" />
+        </clipPath>
+        </defs>
+
+        <image 
+        className={isPlaying ? "active":""}
+        x={30}
+        y={30}
+        width={2 * (size / 2 - 30)}
+        height={2 * (size / 2 - 30)}
+        href="https://pngimg.com/uploads/vinyl/vinyl_PNG107.png"
+        clipPath="url(#myCircle)"
+         />
+        <image 
+        className={isPlaying ? "active":""}
+        x={100}
+        y={100}
+        width={2 * (size / 2 - 100)}
+        height={2 * (size / 2 - 100)}
+        href={image}
+        clipPath="url(#myInnerCircle)"
+         />
+
         </svg>
         </div>
     )
