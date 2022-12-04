@@ -11,9 +11,9 @@ function Player() {
   const [tracks, setTracks] = useState([])
   const [CurrentTrack, setCurrentTrack] = useState({})
   const [CurrentIndex, setCurrentIndex] = useState(0)
+  const [isDone, setisDone] = useState(0)
 
   const location = useLocation();
-  const check = location.state
   useEffect(() => {
       apiClient.get(`playlists/${location.state?.id}/tracks`)
       .then((res) => {
@@ -23,10 +23,19 @@ function Player() {
 
         setTracks(Tr)
         setCurrentTrack(CurrentTr)
+        setisDone(1)
+        console.log(tracks)
         
-        console.log(CurrentTrack)
       });
   },[location.state]);
+
+
+
+    useEffect(()=>{
+      isDone?setCurrentTrack(tracks[CurrentIndex].track):console.log("error")
+  },[CurrentIndex, tracks])
+
+
 
   return (
     <>
