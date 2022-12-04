@@ -5,6 +5,7 @@ import "../css/Player.css";
 import Sidebar from "../Sidebar/Sidebar_spotify";
 import Queue from "../_Queue/Queue";
 import Song from "../_Song/Song";
+import Audioplayer from "./Audioplayer";
 
 function Player() {
 
@@ -41,7 +42,9 @@ function Player() {
     <>
       <Sidebar />
       <div className="content-wrapper player">
-        <div className="left-side"></div>
+        <div className="left-side">
+        <Audioplayer currentTrack={CurrentTrack} />
+        </div>
         <div className="right-side">
           <Song album={CurrentTrack.album} />
           <Queue tracks={tracks} setCurrentIndex={setCurrentIndex}/>
