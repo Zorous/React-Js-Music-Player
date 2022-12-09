@@ -33,7 +33,7 @@ function Player() {
 
 
     useEffect(()=>{
-      isDone?setCurrentTrack(tracks[CurrentIndex].track):console.log("error")
+      isDone?setCurrentTrack(tracks[CurrentIndex].track):console.log("error_player.js_36")
   },[CurrentIndex, tracks])
 
 
@@ -43,7 +43,12 @@ function Player() {
       <Sidebar />
       <div className="content-wrapper player">
         <div className="left-side">
-        <Audioplayer currentTrack={CurrentTrack} />
+        <Audioplayer 
+        currentTrack={CurrentTrack}
+        CurrentIndex={CurrentIndex}
+        setCurrentIndex={setCurrentIndex}
+        total = {tracks}
+        />
         </div>
         <div className="right-side">
           <Song album={CurrentTrack.album} />
