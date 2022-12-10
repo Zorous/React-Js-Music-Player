@@ -32,3 +32,17 @@ audio::-webkit-media-controls-timeline,
 audio::-webkit-media-controls-current-time-display{
     color: #fff;
 }
+
+.img-cover{
+    width: 80vw;
+    height: 40vh;
+    margin-bottom: 10vh;
+}
+
+.audio-wrapper{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}

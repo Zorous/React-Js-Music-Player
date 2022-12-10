@@ -9,9 +9,11 @@ body{
   font-size:24px;
 }
 
+
 .light-mode{
   background:  #FFFDFA !important;
   color:#292929;
+  transition: all 0.5s;
 }
 
 .title-switch{
@@ -22,34 +24,51 @@ body{
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);  color: #fff;
 }
 .switch-lang{
-  background-color: #FFFDFA !important;
-  color:#292929 !important;
+  /* background-color: #FFFDFA !important; */
+  /* color:#292929 !important; */
+  transition: all 0.2s;
 }
 .card,.card-text{
   color: #FFFDFA !important;
+  transition: all 0.2s;
 }
-.card-switch,.card-text-switch{
+
+.card.light{
   background-color: #FFFDFA;
-  color: #292929 !important;
+  color: #0d1d31;
 }
+
+.card-switch,.card-text-switch{
+  background-color: #FFFDFA !important;
+  color: #292929 !important;
+  transition: all 0.2s;
+}
+
 #switch{
-  position: absolute;
-  right: 30px;
+  position: relative;
+  left: 90vw;
   top: 20px;
 }
 
 
 
-.lang{
-  left:100px;
-}
+
 .card-text{
     color:#000;
 }
 
-#title{
-    /* position: fixed; */
+option{
+  background-color: #0d1d31;
+  color: #fff;
 }
+
+.light-mode{
+  background-color:#fff;
+  color: #0d1d31;
+}
+
+
+
 
 .bg-overlay{
     background-repeat: no-repeat;
@@ -66,8 +85,8 @@ body{
     
   }
   .lang{
-    position: absolute;
-    right:20px;
+    position: relative;
+    left:120px;
     top:20px;
   }
 

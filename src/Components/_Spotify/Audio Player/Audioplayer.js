@@ -6,19 +6,37 @@ import Controls from './Controls';
 
 function Audioplayer({   
   currentTrack,
-  currentIndex,
+  CurrentIndex,
   setCurrentIndex,
   total })
-   {
-    const [isPlaying, setIsPlaying] = useState(false);
-  const [trackProgress, setTrackProgress] = useState(0);
-  var audioSrc = total[currentIndex]?.track.preview_url;
+   {  
+ const [firstTrack,setfirstTrack]=useState();
+ const [TracksTotal,setTracksTotal]=useState();
 
-  const audioRef = useRef(new Audio(total[0]?.track.preview_url));
 
 useEffect(()=>{
-  console.log("reference",total)
-},[])
+ if(total) {
+  console.log("haha",total)
+  console.log("haha",CurrentIndex)
+  setTracksTotal(total.length)
+  setfirstTrack(total[0]?.track.preview_url)
+ }
+})
+
+    const audioRef = useRef(new Audio(firstTrack));
+
+    const [isPlaying, setIsPlaying] = useState(false);
+  const [trackProgress, setTrackProgress] = useState(0);
+  var audioSrc = total[CurrentIndex]?.track.preview_url;
+
+  useEffect(()=>{
+    audioRef.current.src=firstTrack
+    console.log(firstTrack)
+  },[firstTrack])
+
+useEffect(()=>{
+  console.log(audioRef)
+})
 
 
   const intervalRef = useRef();
@@ -31,7 +49,6 @@ useEffect(()=>{
 
   const startTimer = () => {
     clearInterval(intervalRef.current);
-
     intervalRef.current = setInterval(() => {
       if (audioRef.current.ended) {
         handleNext();
@@ -82,7 +99,7 @@ useEffect(()=>{
     } else {
       isReady.current = true;
     }
-  }, [currentIndex]);
+  }, [CurrentIndex]);
 
   useEffect(() => {
     return () => {
@@ -92,18 +109,26 @@ useEffect(()=>{
   }, []);
 
   const handleNext = () => {
-    console.log('next')
+/*     console.log('next')
+    console.log(TracksTotal,CurrentIndex)
 
-    if (currentIndex < total.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+    if (CurrentIndex > TracksTotal) {
+      console.log('next - 2')
+      setCurrentIndex(TracksTotal - CurrentIndex)
+      
+    }
+     else{setCurrentIndex(CurrentIndex + 1);}; */
+     if (CurrentIndex < TracksTotal - 1) {
+      setCurrentIndex(CurrentIndex + 1);
     } else setCurrentIndex(0);
   };
+  
 
   const handlePrev = () => {
     console.log('prev')
 
-    if (currentIndex - 1 < 0) setCurrentIndex(total.length - 1);
-    else{ setCurrentIndex(currentIndex - 1);}
+    if (CurrentIndex - 1 < 0) setCurrentIndex(TracksTotal - 1);
+    else{ setCurrentIndex(CurrentIndex - 1);}
   };
 
   const addZero = (n) => {

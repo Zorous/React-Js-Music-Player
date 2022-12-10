@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 // import { Link,useLocation } from 'react-router-dom';
-import '../css/SideBar.css'
+import './SideBar.css'
 import SidebarButton from './SidebarButton';
 import { useEffect } from 'react';
 import apiClient from '../../../spotify';
 import { Link } from 'react-router-dom';
 
-function Sidebar() {
-const [userimage,setUserimage] = useState("https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg");
+function SidebarB() {
+const [userimage,setUserimage] = useState("https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png");
 const [Username,setUsername] =  useState("User")
-
   useEffect(() => {
     apiClient.get("me").then(response =>{
       setUsername(response.data.display_name);
@@ -26,7 +25,7 @@ const [Username,setUsername] =  useState("User")
       <img src={userimage}
         className='profile-img' alt='profile' /> 
       <div>
-       <SidebarButton to="/" icon={<i class="fa-solid fa-house"></i>}  title="Home" />
+       <SidebarButton to="/main" icon={<i class="fa-solid fa-house"></i>}  title="Home" />
        <SidebarButton to="/player" icon={<i class="fa-solid fa-play"></i>}  title="Player" />
        <SidebarButton to="/playlists" icon={<i class="fa-solid fa-compact-disc"></i>}  title="Playlists" />
        <SidebarButton to="/search" icon={<i class="fa-solid fa-magnifying-glass"></i>}  title="Search" />
@@ -41,4 +40,4 @@ const [Username,setUsername] =  useState("User")
   );
 }
 
-export default Sidebar
+export default SidebarB

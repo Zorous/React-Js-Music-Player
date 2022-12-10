@@ -8,6 +8,8 @@ import ENG_Songs from '../../Data/ENG_Songs.json'
 import FR_Songs from '../../Data/FR_Songs.json'
 import DTS_Songs from '../../Data/DTS_Songs.json'
 import All_Songs from '../../Data/All_Songs.json'
+import Sidebar from '../_Spotify/Sidebar/Sidebar_spotify';
+import SidebarB from './_Sidebar/SidebarB';
 // import Sidebar from '../_Spotify/Sidebar/Sidebar_spotify';
 
 // const host = "http://localhost:3000"
@@ -23,21 +25,18 @@ function Main() {
   }
   const switchDark =(e)=>{
    setSwitch(!Switch);
-   let element = document.body;
-   let title= document.getElementById('title');
-   let lang=document.getElementById('lang');
-   let card=document.getElementsByClassName('card');
-   let card_title=document.getElementsByClassName('card-title');
-   element.classList.toggle("light-mode");
-   title.classList.toggle("title-switch");
-   lang.classList.toggle('switch-lang');
-   card.classList.toggle('card-switch');
-   card_title.classList.toggle('card-text-switch');
+   document.body.classList.toggle("light-mode");
+   document.getElementById('title').classList.toggle("title-switch")
+   document.getElementById('lang').classList.toggle('switch-lang');
+   document.getElementsByClassName('card').classList.toggle('card-switch');
+   document.getElementsByClassName('card-title').classList.toggle('card-text-switch');
+   document.getElementsByClassName('option').classList.toggle('light-mode');
+   
   }
 
   return (
     <>
-<SideBar />
+<SidebarB />
       <div className='lang'>
         <div class="form-group">
           <label for="lang">Select a language : </label>
@@ -67,7 +66,8 @@ function Main() {
                 return (
                   <div className="col col-sm-12 col-md-4 col-lg-4 m-5">
 
-                <Link to={`/AudioPlayer/${s.id}`}> <div className="card mb-5" style={{ width: "300px", height: "300px", marginBottom: "200px" }}>
+                <Link to={`/AudioPlayer/${s.id}`}>
+                 <div className="card mb-5" style={{ width: "300px", height: "300px", marginBottom: "200px" }}>
                     <img className="card-img-top" style={{ height: "200px" }} src={s.image} alt="Card image cap" />
                     <div className="card-body">
                       <p className="card-text">{s.title}</p>

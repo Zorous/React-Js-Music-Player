@@ -44,6 +44,7 @@ useEffect(() =>{
         <Routes>
             <Route index  element={<LandingPage />} />         
             <Route path='main' element={<Main />} />         
+            <Route path='/AudioPlayer/:id' element={<AudioPlayer />} />         
           </Routes>
       </BrowserRouter>   
     ):
