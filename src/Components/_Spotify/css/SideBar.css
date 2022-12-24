@@ -4,7 +4,7 @@
     display: flex;
     padding: 15px 0px;
     align-items: center;
-    background-color: #1ed760;
+    background-color: #1ed760 !important;
     border-radius: 10px;
     flex-direction: column;
     justify-content: space-between;

@@ -21,7 +21,7 @@ const [Username,setUsername] =  useState("User")
     window.location.reload(false); 
   }
   return (
-    <div className="sidebar-container">
+    <div className="sidebar-containerB">
       <img src={userimage}
         className='profile-img' alt='profile' /> 
       <div>

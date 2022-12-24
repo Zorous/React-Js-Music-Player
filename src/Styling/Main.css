@@ -28,6 +28,7 @@ body{
   /* color:#292929 !important; */
   transition: all 0.2s;
 }
+
 .card,.card-text{
   color: #FFFDFA !important;
   transition: all 0.2s;
@@ -89,13 +90,28 @@ option{
     left:120px;
     top:20px;
   }
+ 
+:link{
+  text-decoration: none;
+}
+:link:hover{
+  text-decoration: none;
+}
+
+
+.card:hover{
+transform: scale(1.2);
+transition: all 0.5s;
+}
 
 #content{
     position:relative;
     width: 80%;
-    margin-left: 10vw;
-    margin-top: 10vh !important;
+    /* margin-left: 15vw !important;
+    margin-top: 10vh !important; */
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -117,4 +133,16 @@ option{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+#content{
+  margin-right: 5vw;
+}
+  }
+  @media only screen and (max-width: 721px) {
+#content{
+  margin-left: 25vw;
+}
   }

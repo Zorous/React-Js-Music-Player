@@ -1,4 +1,4 @@
-.sidebar-container {
+.sidebar-containerB {
     width: 100px;
     height: 100vh;
     display: flex;
@@ -70,7 +70,7 @@
     .title {
       display: none;
     }
-    .sidebar-container{
+    .sidebar-containerB{
       width: 60px;
 
     }

@@ -53,7 +53,7 @@ function Main() {
         <div id="switch" onClick={switchDark}>{Switch ? <i class="fa-solid fa-moon"></i> : <i class="fa-solid fa-sun"></i>}        
         </div>
       </div>
-      <div id="content" className="p-4 p-md-5 pt-5">
+      <div id="content" className="pt-5">
         <div className="bg-overlay" style={{
           backgroundImage: `url(${process.env.PUBLIC_URL}/bg/bg0.jpg)`,
         }}></div>
@@ -64,10 +64,10 @@ function Main() {
             langue == "All" ?
               All_Songs.Songs.map((s) => {
                 return (
-                  <div className="col col-sm-12 col-md-4 col-lg-4 m-5">
+                  <div className="col col-sm-12 col-md-4 col-lg-3 m-5">
 
                 <Link to={`/AudioPlayer/${s.id}`}>
-                 <div className="card mb-5" style={{ width: "300px", height: "300px", marginBottom: "200px" }}>
+                 <div className="card mb-5 mr-5" style={{ width: "300px", height: "300px", marginBottom: "200px" }}>
                     <img className="card-img-top" style={{ height: "200px" }} src={s.image} alt="Card image cap" />
                     <div className="card-body">
                       <p className="card-text">{s.title}</p>
@@ -85,7 +85,7 @@ function Main() {
                 ENG_Songs.Songs.map((s) => {
                   return (
 
-                    <div className="col col-sm-12 col-md-6 col-lg-4 m-5">
+                    <div className="col col-sm-12 col-md-4 col-lg-3 m-5">
 
                       <div className="card mb-5" style={{ width: "300px", height: "300px", marginBottom: "200px" }}>
                         <img className="card-img-top" style={{ height: "200px" }} src={s.image} alt="Card image cap" />
@@ -103,7 +103,7 @@ function Main() {
                   FR_Songs.Songs.map((s) => {
                     return (
 
-                      <div className="col col-sm-12 col-md-6 col-lg-4 m-5">
+                      <div className="col col-sm-12 col-md-4 col-lg-3 m-5">
 
                       <Link to={`/AudioPlayer/${s.id}`}>  <div className="card mb-5" style={{ width: "300px", height: "300px", marginBottom: "200px" }}>
                           <img className="card-img-top" style={{ height: "200px" }} src={s.image} alt="Card cap" />
@@ -122,7 +122,7 @@ function Main() {
                     DTS_Songs.Songs.map((s) => {
                       return (
 
-                        <div className="col col-sm-12 col-md-6 col-lg-4 m-5">
+                        <div className="col col-sm-12 col-md-4 col-lg-3 m-5">
                         <Link to={`/AudioPlayer/${s.id}`}> 
                           <div className="card mb-5" style={{ width: "300px", height: "300px", marginBottom: "200px" }}>
                             <img className="card-img-top" style={{ height: "200px" }} src={s.image} alt="Card cap" />
