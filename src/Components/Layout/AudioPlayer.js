@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
-import SideBar from './SideBar'
 import { Link, useParams } from 'react-router-dom'
 import '../../Styling/AudioPlayer.css'
-import SidebarB from './_Sidebar/SidebarB'
 import Songs from '../../Data/All_Songs.json'
 
 
@@ -11,20 +9,43 @@ function AudioPlayer() {
   const [coverImage, setCoverImage] = useState()
   const [isPlaying, setIsPlaying] = useState(false)
   const [CurrentIndex, setCurrentIndex] = useState(0)
+  const [CurrentTitle, setCurrentTitle] = useState("")
 
-  let { id } = useParams()
-  const CurrentSong = useRef(new Audio())
+  // const [Src, setSrc] = useState()
 
 
-  useEffect(() => {
+ useEffect(() => {
     setCurrentIndex(id - 1)
+if(CurrentIndex == 0)
+    {setFirstSong(Songs.Songs[CurrentIndex].src)}
+else{
+  CurrentSong.current.pause()
+}
+
+    setIsPlaying(true)
   }, [])
 
+
+  let { id } = useParams()
+  const CurrentSong = useRef(new Audio(firstSong))
+
+ 
+
+  // const intervalRef = useRef();
+
+  // const isReady = useRef(false);
+
+
+
+
   useEffect(() => {
-    console.log(CurrentIndex)
-    // console.log(Songs.Songs[CurrentIndex].src)
+    CurrentSong.current.pause()
+
+    CurrentSong.current = new Audio(Songs.Songs[CurrentIndex].src)    
+    CurrentSong.current.play()
+
     setCoverImage(Songs.Songs[CurrentIndex].image)
-    CurrentSong.current.src = Songs.Songs[CurrentIndex].src
+    setCurrentTitle(Songs.Songs[CurrentIndex].title)
 
 
   }, [CurrentIndex])
@@ -45,28 +66,25 @@ function AudioPlayer() {
 
 
   const handleNext = () => {
-    console.log(Songs.Songs.length)
-    if (Songs.Songs.length > CurrentIndex) {
-      CurrentSong.current.pause()
-      CurrentSong.current.src = Songs.Songs[CurrentIndex + 1].src
-      setCoverImage(Songs.Songs[CurrentIndex + 1].image)
-      CurrentSong.current.play()
+    if (Songs.Songs.length >= CurrentIndex) {
+
+      setCurrentIndex(CurrentIndex + 1)
 
 
     }
     else {
-      console.log('that why')
+      console.log('thats why')
       CurrentSong.current.src = Songs.Songs[CurrentIndex].src
     }
 
 
   }
   const handlePrev = () => {
-    if (CurrentIndex - 1 > 0) {
-      CurrentSong.current.pause()
-      CurrentSong.current.src = Songs.Songs[CurrentIndex - 1].src
-      CurrentSong.current.play()
-
+    if (CurrentIndex - 1 >= 0) {
+      setCurrentIndex(CurrentIndex - 1)
+    }
+    else{
+      setCurrentIndex(0)
     }
   }
 
@@ -87,7 +105,7 @@ function AudioPlayer() {
           <img className='img-bg' src={coverImage} alt="cover" />
         </div></div>
         <div className='track-name'>
-      <marquee><p className='track-namep'> {Songs.Songs[CurrentIndex].title}</p></marquee> 
+      <marquee><p className='track-namep'> {CurrentTitle}</p></marquee> 
         </div>
         <div className='controls-wrapper'>
           <div className='action-btn' onClick={handlePrev}><i class="fa-solid fa-backward"></i></div>

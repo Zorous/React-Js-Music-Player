@@ -53,8 +53,8 @@ function SearchSp(props) {
                 <div style={{ width: "80vw", height: "100vh", marginLeft: "20vw" }}>
                     {token ? (<form onSubmit={searchArtists}>
                         <div className='main'>
-                            <h2>Type your favorite artist :</h2>
-                            <input type="text" id='input' placeholder=' Search...' onChange={(e) => { setKey(e.target.value) }} />
+                            <h2>Type your favorite Artist/Track :</h2>
+                            <input type="text" id='input' placeholder='Search...' onChange={(e) => { setKey(e.target.value) }} />
                             <button id="search" type={"submit"}>search</button></div>
                     </form>) :
                         <h2>Please log in</h2>

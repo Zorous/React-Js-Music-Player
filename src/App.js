@@ -40,15 +40,15 @@ useEffect(() =>{
 },[])
   return (
     !token ?
-      (<BrowserRouter>
+      (
         <Routes>
             <Route index  element={<LandingPage />} />         
             <Route path='main' element={<Main />} />         
             <Route path='/AudioPlayer/:id' element={<AudioPlayer />} />         
           </Routes>
-      </BrowserRouter>   
+        
     ):
-    (<BrowserRouter>
+    (
       <Routes>
           <Route path="/welcome" element={<LandingPage />} />
           <Route index element={<Home />} />
@@ -57,11 +57,8 @@ useEffect(() =>{
           <Route path="/player" element={<Player />} />
           <Route path="Login_with_spotify" element={<Login />} />
           <Route path="audio/:num" element={<AudioPlayer />} />
-
-          
-          
         </Routes>
-    </BrowserRouter>
+    
     )
   );
 }
