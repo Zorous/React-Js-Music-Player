@@ -3,13 +3,13 @@
     {
       "id": 1,
       "title": "Living Life In The Night - Cheriimoya_ Sierra Kidd (Lyrics)(MP3_320K).mp3",
-      "image": "http://localhost:3000/images/ENG_imgs/2.jpg",
-      "src": "http://localhost:3000/Songs/English/Living Life In The Night - Cheriimoya_ Sierra Kidd (Lyrics)(MP3_320K).mp3"
+      "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/2.jpg",
+      "src": "https://zorous-music-player.netlify.app/Living Life In The Night - Cheriimoya_ Sierra Kidd (Lyrics)(MP3_320K).mp3"
     },
     {
       "id": 2,
       "title": "ZAYN - Dusk Till Dawn ft. Sia (Kuoga Remix)(MP3_320K).mp3",
-      "image": "http://localhost:3000/images/ENG_imgs/3.jpg",
+      "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/3.jpg",
       "src": "http://localhost:3000/Songs/English/ZAYN - Dusk Till Dawn ft. Sia (Kuoga Remix)(MP3_320K).mp3"
     },
     {
