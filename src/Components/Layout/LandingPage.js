@@ -80,7 +80,7 @@ function LandingPage() {
       <div className='container'>
 
         <div className='row' id="myrow">
-          <div className='col col-md-6 col-lg-6' id="mycol">
+          <div className='col col-md-12 col-sm-12 col-lg-6' id="mycol">
             <h1 id="title">
               Welcome to my Music Player <span style={{ color: "#12c2e9" }}>React JS</span> project
 
@@ -95,7 +95,7 @@ function LandingPage() {
                 backgroundImage: `url(${process.env.PUBLIC_URL + '/Icons/spotify-icon2.png'})`,
                 backgroundRepeat:"no-repeat",
                 minHeight: "400px",
-                zoom:"0.5"
+                zoom:"0.4"
               }}></div>
             </div>
             <div className="col col-lg-12 col-md-12">
@@ -104,7 +104,7 @@ function LandingPage() {
             </div>
 
           </div>
-          <div className='col col-md col-lg' style={{
+          <div className='col col-md-12 col-lg-6' style={{
             backgroundImage: `url(${process.env.PUBLIC_URL + '/images/LandingPage/music.jpg'})`,
             height: "auto",
             zoom: "0.4",
