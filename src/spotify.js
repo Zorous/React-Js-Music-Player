@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientId = "d2388979405849d2bcf21d088fdc85b8";
-const REDIRECT_URI = "http://localhost:3000";
+const REDIRECT_URI = "https://zorous-music-player.netlify.app/";
 // const scopes = ["user-library-read", "playlist-read-private"];
 const RESPONSE_TYPE = "token"
 
