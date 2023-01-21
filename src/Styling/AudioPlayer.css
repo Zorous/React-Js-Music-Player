@@ -5,8 +5,9 @@ body{
      background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%) !important;
      background-size: cover !important;
      width: 100%;
-     height: 100%;
-       color: #fff;
+     height: 100% !important;
+     color: #fff;
+     background-attachment: fixed;
 }
 .global-wrapper {
     height: 100%;
