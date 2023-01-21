@@ -1,6 +1,6 @@
 .sidebar-containerB {
     width: 100px;
-    height: 100vh;
+    height: 100%;
     display: flex;
     padding: 15px 0px;
     align-items: center;
