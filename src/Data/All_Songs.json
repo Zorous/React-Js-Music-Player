@@ -1,6 +1,12 @@
 {
   "Songs": [
     {
+      "id": 0,
+      "title": "Shiro Sagisu - Treachery lyrics(MP3_320K).mp3",
+      "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/0.jpg",
+      "src": "https://zorous-music-player.netlify.app/Songs/English/Shiro Sagisu - Treachery lyrics(MP3_320K).mp3"
+    },
+    {
       "id": 1,
       "title": "Living Life In The Night - Cheriimoya_ Sierra Kidd (Lyrics)(MP3_320K).mp3",
       "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/2.jpg",
