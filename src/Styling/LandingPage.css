@@ -130,8 +130,8 @@ body{
     /* tablet, landscape iPad, lo-res laptops ands desktops */
     /* zoom : 1; */
 }
-@media (min-width:1025px) { 
-/* zoom : 0.9; */
+@media (max-width:1080px) { 
+body{zoom : 0.7;}
 }
 @media (min-width:1281px) {
     /* hi-res laptops and desktops */
