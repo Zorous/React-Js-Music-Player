@@ -3,11 +3,13 @@
 }
 body{
      background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%) !important;
+     width: 100%;
+     height: 100%;
        color: #fff;
 }
 .global-wrapper {
-    height: 99vh !important;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     align-items: center;
     align-content: center;
 }
@@ -43,7 +45,7 @@ body{
     align-items: center;
     align-content: center;
     width: fit-content;
-    height: 99vh;
+    height: 100%;
 }
 
 .pause-play{
