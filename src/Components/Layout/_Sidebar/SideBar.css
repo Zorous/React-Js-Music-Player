@@ -1,14 +1,20 @@
 .sidebar-containerB {
-    width: 100px;
-    height: 100%;
-    display: flex;
-    padding: 15px 0px;
-    align-items: center;
-    background-color: #12c2e9;
-    border-radius: 10px;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
+  position: fixed;
+  width: 110px;
+  height: 100vh;
+  top: 0; /* Stay at the top */
+  left: 0;
+  display: flex;
+  padding: 15px 0px;
+  align-items: center;
+  background-color: #12c2e9;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-right: 100px;
+  overflow-x: hidden;
+    
   }
   
   .profile-img {
