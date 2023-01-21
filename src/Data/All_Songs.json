@@ -1,12 +1,6 @@
 {
   "Songs": [
     {
-      "id": 0,
-      "title": "Shiro Sagisu - Treachery lyrics(MP3_320K).mp3",
-      "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/0.jpg",
-      "src": "https://zorous-music-player.netlify.app/Songs/English/Shiro Sagisu - Treachery lyrics(MP3_320K).mp3"
-    },
-    {
       "id": 1,
       "title": "Living Life In The Night - Cheriimoya_ Sierra Kidd (Lyrics)(MP3_320K).mp3",
       "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/2.jpg",
@@ -36,52 +30,58 @@
       "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/6.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/English/Suzanne Vega_ DNA - Tom_s Diner (Traducida al Español)(MP3_320K).MP3"
     },
-
     {
       "id": 6,
+      "title": "Shiro Sagisu - Treachery lyrics(MP3_320K).mp3",
+      "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/0.jpg",
+      "src": "https://zorous-music-player.netlify.app/Songs/English/Shiro Sagisu - Treachery lyrics(MP3_320K).mp3"
+    },
+
+    {
+      "id": 7,
       "title": "Indila - Dernière Danse (Clip Officiel)(MP3_320K).MP3",
       "image": "https://zorous-music-player.netlify.app/images/FR_imgs/1.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/French/Indila - Dernière Danse (Clip Officiel)(MP3_320K).MP3"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Stromae - Formidable (ceci n_est pas une leçon)(MP3_320K).MP3",
       "image": "https://zorous-music-player.netlify.app/images/FR_imgs/2.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/French/Stromae - Formidable (ceci n_est pas une leçon)(MP3_320K).MP3"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Stromae - Santé (Official Music Video)(MP3_320K).MP3",
       "image": "https://zorous-music-player.netlify.app/images/FR_imgs/3.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/French/Stromae - Santé (Official Music Video)(MP3_320K).MP3"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "Indila - Love story _ (Sped up)(MP3_320K).MP3",
       "image": "https://zorous-music-player.netlify.app/images/FR_imgs/4.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/French/Indila - Love story _ (Sped up)(MP3_320K).MP3"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "Stromae - Alors On Danse(MP3_320K).MP3",
       "image": "https://zorous-music-player.netlify.app/images/FR_imgs/5.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/French/Stromae - Alors On Danse(MP3_320K).MP3"
     },
 
     {
-      "id": 11,
+      "id": 12,
       "title": "E QUE HOJE VAI TER FESTINHA AQUI DENTRO DO MEU BARRACO SEQUÊNCIA DE VAPO Com Grave(MP3_320K).mp3",
       "image": "https://zorous-music-player.netlify.app/images/ENG_imgs/1.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/E QUE HOJE VAI TER FESTINHA AQUI DENTRO DO MEU BARRACO SEQUÊNCIA DE VAPO Com Grave(MP3_320K).mp3"
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "Kontra K - Erfolg ist kein Glück (Official Video)(MP3_320K).MP3",
       "image": "https://zorous-music-player.netlify.app/images/DTS_imgs/1.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/German/Kontra K - Erfolg ist kein Glück (Official Video)(MP3_320K).MP3"
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "Bist du real(MP3_160K)",
       "image": "https://zorous-music-player.netlify.app/images/DTS_imgs/2.jpg",
       "src": "https://zorous-music-player.netlify.app/Songs/German/Bist du real(MP3_160K).mp3"
