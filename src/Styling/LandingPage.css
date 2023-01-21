@@ -17,14 +17,14 @@ html,body {
     margin-bottom: 10vh;
 }
 
-#myrow{
+ #myrow{
     margin:auto;
     margin-top: 10vh;
-}
+} 
 
 #mycol{
     margin: auto;
-    height: 60vh;
+    height: auto;
 
 }
 
@@ -132,6 +132,12 @@ body{
 }
 @media (max-width:1080px) { 
 body{zoom : 0.6;}
+#myrow{
+    margin:auto;
+    margin-top: 15vh;
+}
+
+
 }
 @media (min-width:1281px) {
     /* hi-res laptops and desktops */

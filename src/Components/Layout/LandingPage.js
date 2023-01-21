@@ -87,11 +87,11 @@ function LandingPage() {
             </h1>
 
             <Link to="main"> <button class="glow-on-hover" type="button">Start Listening</button></Link> <br></br>
-            <br></br>
-            <br></br>
+     
 
-            <div className="row">
-              <div className='col col-md-12 col-lg-12 mb-5' style={{
+
+            <div className="row mt-5">
+              <div className='col col-md-12 col-lg-12 mt-5' style={{
                 backgroundImage: `url(${process.env.PUBLIC_URL + '/Icons/spotify-icon2.png'})`,
                 backgroundRepeat:"no-repeat",
                 minHeight: "400px",
@@ -104,13 +104,13 @@ function LandingPage() {
             </div>
 
           </div>
+     
           <div className='col col-md-12 col-lg-6' style={{
             backgroundImage: `url(${process.env.PUBLIC_URL + '/images/LandingPage/music.jpg'})`,
             height: "auto",
             zoom: "0.4",
             borderRadius: "300px",
           }}></div>
-
         </div>
       </div>
       
