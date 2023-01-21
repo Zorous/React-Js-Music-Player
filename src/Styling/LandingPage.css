@@ -131,7 +131,7 @@ body{
     /* zoom : 1; */
 }
 @media (max-width:1080px) { 
-body{zoom : 0.7;}
+body{zoom : 0.6;}
 }
 @media (min-width:1281px) {
     /* hi-res laptops and desktops */
