@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/91610919/217028724-f03fcee2-9085-4075-8e51-4f6f7afc1996.png" />
 </p>
 <h2>This is a React JS App, it's a Music Player which has some local songs and allows you also to log in via Spotify and listen to a preview of your Favorite Songs</h2>
-<p>using CI/CD</p>
+<h4>using CI/CD</h4>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
