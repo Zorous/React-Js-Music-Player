@@ -1,5 +1,5 @@
 <p align="center">
-<img src="[https://user-images.githubusercontent.com/91610919/217025699-acd26b92-4bbf-4ade-b816-8718777195b7.png](https://user-images.githubusercontent.com/91610919/217028724-f03fcee2-9085-4075-8e51-4f6f7afc1996.png)" />
+<img src="https://user-images.githubusercontent.com/91610919/217028724-f03fcee2-9085-4075-8e51-4f6f7afc1996.png" />
 </p>
 <h2>This is a React JS App, it's a Music Player which has some local songs and allows you also to log in via Spotify and listen to a preview of your Favorite Songs</h2>
 
