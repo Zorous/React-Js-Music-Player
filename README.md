@@ -4,7 +4,9 @@
 <h2>This is a React JS App, it's a Music Player which has some local songs and allows you also to log in via Spotify and listen to a preview of your Favorite Songs</h2>
 <h4>using CI/CD</h4>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+<i>
+So the app is split in two parts, the first have some songs on local and the second part is connected to Spotify, so using an Asynchronuous spotify API if you have any playlists on your spotify account u will be able to listen to a preview of them on this Music Player, and you can search on Spotify's database for your favorite Songs or Artists.
+</i>
 ## Available Scripts
 
 In the project directory, you can run:
