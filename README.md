@@ -13,7 +13,9 @@ So the app is split in two parts, the first have some songs on local and the sec
 The first part represents all the available Songs with the option of specifying the language, it supports Laptops and Pcs just as it supports tablets and phones
 
 
-<h5>As for the second part</h5> It shows all your Spotify playlists Asynchronuously and you could listen to a preview through their API, it has also a search box which does return either the Artists or the Tracks you're looking for
+<h5>As for the second part</h5> It shows all your Spotify playlists Asynchronuously and you could listen to a preview through their API, it has also a search box which does return either the Artists or the Tracks you're looking for.
+
+<hr>
 ## Available Scripts
 
 In the project directory, you can run:
