@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <i>
 So the app is split in two parts, the first have some songs on local and the second part is connected to Spotify, so using an Asynchronuous spotify API if you have any playlists on your spotify account u will be able to listen to a preview of them on this Music Player, and you can search on Spotify's database for your favorite Songs or Artists.
 </i>
+
+<h5>The first Part </h5>
+The first part represents all the available Songs with the option of specifying the language, it supports Laptops and Pcs just as it supports tablets and phones
 ## Available Scripts
 
 In the project directory, you can run:
